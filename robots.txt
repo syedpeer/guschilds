@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /README.md
+Disallow: /rc-mvp/
+Disallow: /sochi/
