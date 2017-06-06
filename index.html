@@ -3,58 +3,69 @@
   <head>
     <title>Gus Childs</title>
     <meta charset="utf-8">
-    <meta name="description" content="I'm Gus Childs, a Drupal developer living in Golden, CO.">
+    <meta name="description" content="I live in Golden, CO and I build complex websites with Chromatic. I also write and speak about open source and I love fresh air.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css" media="all">
-      html, body { margin: 0; padding: 0; color: #333; }
-      body { padding: 30px 10px 30px; background: #DDD; font-family: "Arial", sans-serif; font-size: 16px; }
-      .container { max-width: 920px; margin: 0 auto; padding: 20px 40px; background: #FFF; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .2); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .2); }
-      h1 { border-bottom: 4px solid #F00; margin-bottom: 25px; padding-bottom: 25px; font-size: 1.75em; }
-      h2, h3, p { font-weight: normal; }
-      h3 { border-top: 1px solid #E6E6E6; margin-top: 25px; padding-top: 25px; }
-      p { line-height: 150%; }
-      li { margin-bottom: 10px; }
-      a { color: #069; text-decoration: none; background-color: #E1F3F9; padding: 2px 4px; -webkit-border-radius: 2px; border-radius: 2px; }
-      a:hover { border-bottom: 2px solid #069; }
-      a:active { border-top: 2px solid #069; }
-      @media (max-width: 480px) {
-        body { background-color: #FFF; padding: 0; }
-        .container { padding: 10px 20px; -webkit-box-shadow: none; box-shadow: none; }
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-image: url('assets/background.jpg');
+        background-position: 50%;
+        background-size: cover;
+      }
+      main {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 75%;
+        margin: auto;
+        color: #000;
+        transform: translate(-50%,-50%);
+        font-family: 'Roboto Slab';
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        font-size: 27px;
+        line-height: 100%;
+      }
+      h2 {
+        margin: 15px 0;
+        font-size: 21px;
+        line-height: 175%;
+      }
+      a {
+        color: #1956a5;
+        transition: color .3s ease;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #128a31;
+      }
+      @media (min-width: 680px) {
+        main {
+          top: 50%;
+          width: 60%;
+          max-width: 750px;
+        }
+        h1 {
+          font-size: 45px;
+        }
+        h2 {
+          font-size: 24px;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Hello! I'm Gus.</h1>
-      <h2>I work as a web developer for <a href="http://www.chromatichq.com/" target="_blank">CHROMATIC</a> and live in Golden, CO.</h2>
-      <p>After an MS Paint childhood and an Interactive Media degree, I found <a href="https://drupal.org/" target="_blank">Drupal</a>. Years later, I'm a mobile first front-end developer that prioritizes user experience. I'm not afraid to write a module and I'm a community contributor and speaker</a>. All the while, I've always bounced between a computer and the outdoors.</p>
-      <p>I attended <a href="http://bradley.edu/" target="_blank">Bradley University</a> and previously worked at <a href="http://northwestern.edu/" target="_blank">Northwestern University</a>.</p>
-      <p>You can find me on <a href="https://drupal.org/user/1468898" target="_blank">Drupal.org</a>, <a href="https://twitter.com/guschilds" target="_blank">Twitter</a>, <a href="https://www.instagram.com/gus.childs/" target="_blank">Instagram</a>, and <a href="http://www.linkedin.com/in/guschilds" target="_blank">LinkedIn</a>.
-      <h3>Speaking:</h3>
-      <ul>
-        <li><a href="https://2016.drupalcampcolorado.org/session/aha-understanding-and-using-render-arrays-drupal-8" target="_blank">Aha! Understanding and Using Render Arrays in Drupal 8</a> at <a href="https://2016.drupalcampcolorado.org/" target="_blank">DrupalCamp Colorado 2016</a></li>
-        <li><a href="https://events.drupal.org/neworleans2016/sessions/aha-understanding-and-using-render-arrays-drupal-8" target="_blank">Aha! Understanding and Using Render Arrays in Drupal 8</a> at <a href="https://events.drupal.org/neworleans2016" target="_blank">DrupalCon NOLA 2016</a></li>
-        <li><a href="https://2015.badcamp.net/session/7-8-transitioning-theme-and-theme-functions-render-arrays-and-templates" target="_blank">7 to 8: Transitioning From theme() and Theme Functions to Render Arrays and Templates</a> at <a href="https://2015.badcamp.net/" target="_blank">BADCamp 2015</a></li>
-        <li><a href="https://2015.drupalcampcolorado.org/session/contributing-client-work-culture" target="_blank">Contributing Client Work as a Culture</a> at <a href="https://2015.drupalcampcolorado.org/" target="_blank">DrupalCamp Colorado 2015</a></li>
-        <li><a href="http://2015.midcamp.org/session-proposal/need-better-way-organize-your-features-go-ask-alice" target="_blank">Need a Better Way to Organize Your Features? Go Ask Alice.</a> at <a href="http://2015.midcamp.org/" target="_blank">MidCamp 2015</a></li>
-      </ul>
-      <h3>Writing:</h3>
-      <ul>
-        <li><a href="https://chromatichq.com/blog/evaluating-tools-building-component-library" target="_blank">Evaluating Tools For Building a Component Library</a></li>
-        <li><a href="https://chromatichq.com/blog/the-road-to-speaking-at-drupalcon" target="_blank">The Road to Speaking at DrupalCon</a></li>
-        <li><a href="http://chromatichq.com/blog/badcamp-2015-transitioning-theme-and-theme-functions-render-arrays-and-templates" target="_blank">BADCamp 2015: Transitioning From theme() and Theme Functions to Render Arrays and Templates</a></li>
-        <li><a href="http://chromatichq.com/blog/chromatic-helped-meredith-corporation-rebuild-and-launch-parents-magazine" target="_blank">Chromatic helped the talented team at Meredith Corporation rebuild and launch Parents.com!</a></li>
-        <li><a href="http://chromatichq.com/blog/through-looking-glass-midcamp-2015" target="_blank">Through the Looking-Glass: MidCamp 2015</a></li>
-        <li><a href="http://chromatichq.com/blog/atomic-drupal-development-building-pieces-pages" target="_blank">Atomic Drupal Development: Building Pieces Before Pages</a></li>
-        <li><a href="http://www.chromatichq.com/blog/how-organize-drupal-features-reduce-merge-conflicts-and-stay-sane" target="_blank">How to Organize Drupal Features, Reduce Merge Conflicts, and Stay Sane</a></li>
-        <li><a href="http://www.chromatichq.com/blog/creating-custom-progress-throbber-drupal" target="_blank">Creating a Custom Progress Throbber for Drupal</a></li>
-        <li><a href="http://www.chromatichq.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin" target="_blank">Responsive Grid Building with Sass and Zen Grids: The Tale of the Breakpoint Grid Breakdown Mixin</a></li>
-        <li><a href="http://www.chromatichq.com/blog/which-responsive-drupal-7-theme-should-i-use" target="_blank">Which Responsive Drupal 7 Theme Should I Use?</a></li>
-      </ul>
-    </div>
+    <main>
+      <h1>Hi! I'm Gus Childs.</h1>
+      <h2>I live in <a href="https://goo.gl/maps/xcLFAyx67nu" target="_blank">Golden, CO</a> and I build complex websites with <a href="https://www.chromatichq.com/" target="_blank">Chromatic</a>. I also <a href="https://chromatichq.com/blog/evaluating-tools-building-component-library" target="_blank">write</a> and <a href="https://events.drupal.org/neworleans2016/sessions/aha-understanding-and-using-render-arrays-drupal-8" target="_blank">speak</a> about <a href="https://drupal.org/u/guschilds" target="_blank">open source</a> and I love <a href="https://www.instagram.com/gus.childs/" target="_blank">fresh air</a>.</h2>
+    </main>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-18642765-7']);
