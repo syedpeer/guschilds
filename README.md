@@ -1,4 +1,3 @@
-guschilds.com
-=============
+# guschilds.com
 
-An extremely simple introduction to who I am and what I do.
+A simple introduction to who I am and what I do.
