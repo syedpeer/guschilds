@@ -1,0 +1,19 @@
+{
+  "name": "guschilds",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.4.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-plugin-gridsome": "^1.0.1",
+    "vue-eslint-parser": "^5.0.0"
+  }
+}
