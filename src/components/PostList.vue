@@ -3,7 +3,7 @@
     <li v-for="post in data">
       <PostItem
         :title="post.title"
-        :url="post.url"
+        :url="post.path"
         :date="post.date"
         :source="post.source"
       />

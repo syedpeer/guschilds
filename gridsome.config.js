@@ -10,5 +10,18 @@ module.exports = {
   icon: {
     favicon: 'src/guschilds-favicon.png',
     touchicon: 'src/guschilds-touchicon.png'
-  }
+  },
+  transformers: {
+    remark: {}
+  },
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'posts/**/*.md',
+        typeName: 'Post',
+        route: '/:slug'
+      }
+    },
+  ]
 }

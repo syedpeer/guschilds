@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .tier {
   padding: 24px 0;
 }
@@ -19,10 +19,19 @@ export default {
 .tier--header {
   background-color: #FFF8ED;
   border-top: 4px solid #E66039;
-  text-shadow: 1px 1px 0 #FFF;
 }
 
 .tier--intro {
   background: #6CC4E9;
+}
+
+.tier--post {
+  @media only screen and (max-width: 679px) {
+    padding: 0;
+  }
+
+  @media only screen and (min-width: 680px) {
+    padding: 8px 0 48px;
+  }
 }
 </style>

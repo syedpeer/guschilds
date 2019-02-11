@@ -4,14 +4,16 @@
       <Container>
         <Row>
           <Column>
-            <Heading element="h1" modifiers="page-title">Gus Childs</Heading>
+            <Heading element="h1" modifiers="page-title">
+              <Link url="/">Gus Childs</Link>
+            </Heading>
             <Heading element="h2" modifiers="page-slogan">Front-End Developer, Drupal Expert, Project Lead, Writer, and Speaker</Heading>
           </Column>
         </Row>
       </Container>
     </Tier>
     <slot/>
-    <Tier element="main" modifiers="intro">
+    <Tier element="section" modifiers="intro">
       <Container>
         <Row modifiers="flex--md center--md">
           <Column modifiers="3 2--md 1-5--lg center--smo">
@@ -26,50 +28,50 @@
         </Row>
       </Container>
     </Tier>
-    <Tier element="main">
+    <Tier element="section">
       <Container>
         <Row modifiers="flex--md">
           <Column element="aside" modifiers="4--md">
             <Heading element="h4" modifiers="aside">Writing</Heading>
-            <PostList :data="[
+            <PostList :data="$static.posts.edges.map(post => post.node).concat([
               {
                 'title': 'Questions To Ask Before Building a Component Library',
-                'url': 'https://chromatichq.com/blog/questions-ask-building-component-library',
+                'path': 'https://chromatichq.com/blog/questions-ask-building-component-library',
                 'date': 'February 22, 2018',
                 'source': 'chromatichq.com'
               },
               {
                 'title': 'Evaluating Tools For Building a Component Library',
-                'url': 'https://chromatichq.com/blog/evaluating-tools-building-component-library',
+                'path': 'https://chromatichq.com/blog/evaluating-tools-building-component-library',
                 'date': 'January 23, 2017',
                 'source': 'chromatichq.com'
               },
               {
                 'title': 'The Road to Speaking at DrupalCon',
-                'url': 'https://chromatichq.com/blog/the-road-to-speaking-at-drupalcon',
+                'path': 'https://chromatichq.com/blog/the-road-to-speaking-at-drupalcon',
                 'date': 'August 5, 2016',
                 'source': 'chromatichq.com'
               }
-            ]"/>
+            ])"/>
           </Column>
           <Column element="aside" modifiers="4--md">
             <Heading element="h4" modifiers="aside">Speaking</Heading>
             <PostList :data="[
               {
                 'title': 'Finding Your Way: Practical Strategies for Navigating Your Career',
-                'url': 'https://events.drupal.org/seattle2019/sessions/finding-your-way-practical-strategies-navigating-your-career',
+                'path': 'https://events.drupal.org/seattle2019/sessions/finding-your-way-practical-strategies-navigating-your-career',
                 'date': 'April 10, 2019',
                 'source': 'DrupalCon Seattle'
               },
               {
                 'title': 'Everybody Loves Performance: Easy Audits and Low-Hanging Fruit',
-                'url': 'https://events.drupal.org/nashville2018/sessions/everybody-loves-performance-easy-audits-and-low-hanging-fruit',
+                'path': 'https://events.drupal.org/nashville2018/sessions/everybody-loves-performance-easy-audits-and-low-hanging-fruit',
                 'date': 'April 10, 2018',
                 'source': 'DrupalCon Nashville'
               },
               {
                 'title': 'Aha! Understanding and Using Render Arrays in Drupal 8',
-                'url': 'https://events.drupal.org/neworleans2016/sessions/aha-understanding-and-using-render-arrays-drupal-8',
+                'path': 'https://events.drupal.org/neworleans2016/sessions/aha-understanding-and-using-render-arrays-drupal-8',
                 'date': 'May 10, 2016',
                 'source': 'DrupalCon New Orleans'
               }
@@ -92,6 +94,20 @@
     </Tier>
   </div>
 </template>
+
+<static-query>
+query Posts {
+  posts: allPost {
+    edges {
+      node {
+        title
+        path
+        date(format: "MMMM D, YYYY", locale: "en-us")
+      }
+    }
+  }
+}
+</static-query>
 
 <script>
 import Callout from '~/components/Callout.vue'

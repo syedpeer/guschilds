@@ -11,10 +11,39 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .column {
   box-sizing: border-box;
   padding: 0 16px;
+}
+
+.column--post {
+  background-color: #fffdfc;
+  border-top: 2px solid #FCEFEB;
+  padding: 8px 16px;
+  position: relative;
+
+  @media only screen and (min-width: 680px) {
+    border: 2px solid #FCEFEB;
+    margin: 0 auto;
+    padding: 8px 64px;
+    width: calc(68.75% + 96px);
+
+    &:after {
+      background-color: #FCEFEB;
+      bottom: -6px;
+      content: '';
+      left: 4px;
+      position: absolute;
+      right: 4px;
+      top: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    padding: 16px 128px;
+    width: calc(68.75% + 224px);
+  }
 }
 
 .column--1 { width: 12.5%; }

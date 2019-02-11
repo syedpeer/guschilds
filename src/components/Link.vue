@@ -34,7 +34,6 @@ export default {
 <style lang="scss">
 .link {
   color: #385559;
-  display: block;
   position: relative;
   text-decoration: none;
   text-shadow: 1px 1px 0 #FFF8ED;
@@ -42,13 +41,13 @@ export default {
   z-index: 1;
 
   &:before {
-    content: '';
-    position: absolute;
     background-color: #E66039;
-    z-index: -1;
+    content: '';
     display: block;
     opacity: 0.1;
+    position: absolute;
     transition: .2s all;
+    z-index: -1;
   }
 
   &:hover {
@@ -77,6 +76,8 @@ export default {
 }
 
 .link--post-item {
+  display: block;
+
   &:before {
     height: calc(100% + 2px);
     left: -8px;
@@ -92,6 +93,7 @@ export default {
 }
 
 .link--service {
+  display: block;
   font-size: 14px;
   font-weight: 600;
 
