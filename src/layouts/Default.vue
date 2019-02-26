@@ -45,12 +45,6 @@
                 'path': 'https://chromatichq.com/blog/evaluating-tools-building-component-library',
                 'date': 'January 23, 2017',
                 'source': 'chromatichq.com'
-              },
-              {
-                'title': 'The Road to Speaking at DrupalCon',
-                'path': 'https://chromatichq.com/blog/the-road-to-speaking-at-drupalcon',
-                'date': 'August 5, 2016',
-                'source': 'chromatichq.com'
               }
             ])"/>
           </Column>

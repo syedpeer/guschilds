@@ -1,6 +1,8 @@
 # guschilds.com
 
-A simple introduction to who I am and what I do. Built with [Gridsome].
+A simple introduction to who I am and what I do.
+
+Built with [Gridsome]. [Read why here].
 
 ## Development
 
@@ -11,4 +13,5 @@ A simple introduction to who I am and what I do. Built with [Gridsome].
 Consult the [Gridsome documentation] for more information.
 
 [Gridsome]: https://gridsome.org/
+[Read why here]: https://guschilds.com/building-a-javascript-powered-blog
 [Gridsome documentation]: https://gridsome.org/docs
