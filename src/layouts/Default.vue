@@ -4,10 +4,10 @@
       <Container>
         <Row>
           <Column>
-            <Heading element="h1" modifiers="page-title">
+            <Heading element="p" modifiers="page-title">
               <Link url="/">Gus Childs</Link>
             </Heading>
-            <Heading element="h2" modifiers="page-slogan">Front-End Developer, Drupal Expert, Project Lead, Writer, and Speaker</Heading>
+            <Heading element="p" modifiers="page-slogan">Front-End Developer, Drupal Expert, Project Lead, Writer, and Speaker</Heading>
           </Column>
         </Row>
       </Container>

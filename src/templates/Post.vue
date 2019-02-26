@@ -1,13 +1,16 @@
 <template>
   <Layout>
-    <Tier element="section" modifiers="post">
-      <Container element="main">
+    <Tier element="main" modifiers="post">
+      <Container element="section">
         <Row>
           <Column modifiers="post">
-            <div class="post" v-html="$page.post.content"/>
-            <Heading element="h5" modifiers="byline">
-              Posted by <Link url="/" modifiers="inline">Gus Childs</Link> on {{ this.$page.post.date }}
-            </Heading>
+            <div class="post">
+              <Heading element="h1" modifiers="post-title" v-html="$page.post.title"/>
+              <div class="post__content" v-html="$page.post.content"/>
+              <Heading element="h5" modifiers="byline">
+                Posted by <Link url="/" modifiers="inline">Gus Childs</Link> on {{ this.$page.post.date }}
+              </Heading>
+            </div>
           </Column>
         </Row>
       </Container>
@@ -48,6 +51,7 @@ export default {
       titleTemplate: this.$page.post.title + ' | %s',
       meta: [
         {
+          key: 'description',
           name: 'description',
           content: this.$page.post.description
         }
@@ -58,8 +62,7 @@ export default {
 </script>
 
 <style lang="scss">
-.post {
-  h1,
+.post__content {
   h2 {
     line-height: 128%;
     position: relative;
@@ -89,16 +92,6 @@ export default {
     }
   }
 
-  h1 {
-    font-size: 24px;
-    margin: 24px 0;
-
-    @media only screen and (min-width: 960px) {
-      font-size: 32px;
-      margin: 40px 0;
-    }
-  }
-
   h2 {
     font-size: 21px;
     margin: 32px 0 24px;
@@ -117,7 +110,7 @@ export default {
     margin: 24px 0;
 
     @media only screen and (min-width: 960px) {
-      font-size: 21px;
+      font-size: 18px;
       margin: 32px 0;
     }
   }
@@ -138,6 +131,15 @@ export default {
     &:hover {
       color: #E66039;
     }
+  }
+
+  code {
+    background-color: #EEEEEE;
+    font-size: .9em;
+    letter-spacing: -.02em;
+    margin: -2px 0;
+    padding: 2px;
+    text-shadow: 1px 1px 0 #FFF8ED;
   }
 }
 

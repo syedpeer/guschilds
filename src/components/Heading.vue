@@ -34,6 +34,18 @@ export default {
   font-size: 16px;
 }
 
+.heading--post-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 128%;
+  margin: 24px 0;
+
+  @media only screen and (min-width: 960px) {
+    font-size: 32px;
+    margin: 40px 0;
+  }
+}
+
 .heading--aside {
   margin: 12px 0;
   font-size: 18px;
@@ -46,8 +58,8 @@ export default {
 
 .heading--byline {
   font-size: 14px;
-  font-weight: 500;
-  margin: 40px 0;
+  font-weight: 300;
+  margin: 48px 0 32px;
 
   @media only screen and (min-width: 960px) {
     font-size: 16px;

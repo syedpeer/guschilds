@@ -41,8 +41,8 @@ export default {
   }
 
   @media only screen and (min-width: 960px) {
-    padding: 16px 128px;
-    width: calc(68.75% + 224px);
+    padding: 16px 96px;
+    width: calc(68.75% - 32px + 4px);
   }
 }
 

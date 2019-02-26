@@ -33,5 +33,9 @@ export default {
   @media only screen and (min-width: 680px) {
     padding: 8px 0 48px;
   }
+
+  @media only screen and (min-width: 960px) {
+    padding: 32px 0 48px;
+  }
 }
 </style>

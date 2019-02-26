@@ -1,11 +1,11 @@
 <template>
-  <div class="post-item">
+  <h5 class="post-item">
     <Link :url="url" modifiers="post-item" :external="external">
-      <h5 class="post-item__title">{{ title }}</h5>
+      <span class="post-item__title">{{ title }}</span>
       <span class="post-item__date">{{ date }}</span>
       <span class="post-item__source" v-if="source"> at {{ source }}</span>
     </Link>
-  </div>
+  </h5>
 </template>
 
 <script>
@@ -43,6 +43,7 @@ export default {
 }
 
 .post-item__title {
+  display: block;
   font-size: 16px;
   font-weight: 700;
   margin: 0 0 8px;
