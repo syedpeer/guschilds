@@ -22,7 +22,7 @@
           <Column modifiers="6--md 4--lg">
             <Callout>
               <Heading element="h4" modifiers="aside">Nice to meet you!</Heading>
-              <Txt modifiers="intro">I’m Gus, a Senior Software Engineer at <Link url="http://mondorobot.com/" modifiers="inline" external>Mondo Robot</Link>. I build complex websites with component-based design systems and open source technologies. That's also what I write and speak about. I'm a fan of fresh air and live in Golden, CO. <Link url="https://twitter.com/guschilds" modifiers="inline" external>Say hi!</Link></Txt>
+              <Txt modifiers="intro">I’m Gus. I'm a Front-End Developer, Drupal expert, and project lead. I build complex websites with component-based design systems and open source technologies. That's also what I write and speak about. I'm a fan of fresh air and live in Golden, CO. <Link url="https://twitter.com/guschilds" modifiers="inline" external>Say hi!</Link></Txt>
             </Callout>
           </Column>
         </Row>
